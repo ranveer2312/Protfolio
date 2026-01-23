@@ -44,9 +44,11 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <User className="w-4 h-4 text-white" />
-              </div>
+              <img 
+                src="/images/profile.jpg" 
+                alt="Rana Ranveer Kumar Yadav" 
+                className="w-8 h-8 rounded-lg object-cover border-2 border-blue-600"
+              />
               <h1 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
                 Rana Ranveer
               </h1>

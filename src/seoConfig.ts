@@ -3,8 +3,8 @@ export const seoConfig = {
   // Primary Keywords
   primaryKeywords: [
     'Rana Ranveer Kumar Yadav',
-    'Java Full Stack Developer',
-    'Spring Boot Developer',
+    'Rana Ranveer',
+    'Rana',
     'React Developer Bengaluru',
     'MySQL Expert India'
   ],
