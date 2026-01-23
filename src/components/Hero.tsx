@@ -38,6 +38,17 @@ const Hero: React.FC = () => {
 
 
 
+          {/* Profile Image */}
+          <div className="mb-8">
+            <img 
+              src="/images/profile.jpg" 
+              alt="Rana Ranveer Kumar Yadav - Java Full Stack Developer" 
+              title="Rana Ranveer Kumar Yadav"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto border-4 border-blue-600 shadow-2xl object-cover"
+              itemProp="image"
+            />
+          </div>
+
           {/* Enhanced Headings */}
           <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-8 tracking-tight leading-tight" style={{fontFamily: 'Poppins, sans-serif'}}>
             <span className="block">Rana Ranveer</span>
