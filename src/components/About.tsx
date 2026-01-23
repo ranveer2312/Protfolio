@@ -59,13 +59,13 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white dark:bg-slate-900">
+    <section id="about" className="py-24 bg-white dark:bg-slate-900" itemScope itemType="https://schema.org/Person">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Rana Ranveer Kumar Yadav</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Java Full Stack Developer specializing in scalable web applications and modern development practices
+            <span itemProp="name">Rana Ranveer Kumar Yadav</span> - <span itemProp="jobTitle">Java Full Stack Developer</span> specializing in scalable web applications and modern development practices
           </p>
         </div>
 
@@ -76,28 +76,31 @@ const About: React.FC = () => {
               <div className="text-center mb-6">
                 <img
                   src="/images/profile.jpg"
-                  alt="Rana Ranveer Kumar Yadav"
+                  alt="Rana Ranveer Kumar Yadav - Java Full Stack Developer Profile Picture"
                   className="w-full h-auto rounded-xl mx-auto mb-4 object-cover shadow-lg border border-slate-300"
+                  itemProp="image"
                 />
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-1" itemProp="name">
                   Rana Ranveer Kumar Yadav
                 </h3>
-                <p className="text-blue-600 font-semibold text-lg mb-4">
+                <p className="text-blue-600 font-semibold text-lg mb-4" itemProp="jobTitle">
                   Java Full Stack Developer
                 </p>
               </div>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-3 mb-6" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <Building className="w-5 h-5 text-blue-600" />
-                  <div>
-                    <p className="font-medium">Tiranga Aerospace</p>
+                  <div itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
+                    <p className="font-medium" itemProp="name">Tiranga Aerospace</p>
                     <p className="text-sm text-slate-500">Web Development Trainee</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <MapPin className="w-5 h-5 text-blue-600" />
-                  <span>Bengaluru, Karnataka, India</span>
+                  <span>
+                    <span itemProp="addressLocality">Bengaluru</span>, <span itemProp="addressRegion">Karnataka</span>, <span itemProp="addressCountry">India</span>
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <Calendar className="w-5 h-5 text-blue-600" />
@@ -105,7 +108,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <GraduationCap className="w-5 h-5 text-blue-600" />
-                  <span>Computer Science Engineering</span>
+                  <span itemProp="alumniOf">Computer Science Engineering</span>
                 </div>
               </div>
 
@@ -117,13 +120,14 @@ const About: React.FC = () => {
               <div className="border-t border-slate-200 dark:border-slate-600 pt-4">
                 <h4 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-center">
                   <Award className="w-4 h-4 mr-2 text-blue-600" />
-                  Specializations
+                  Technical Specializations
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {["Spring Boot", "React.js", "MySQL", "REST APIs"].map((spec, index) => (
                     <span
                       key={index}
                       className="px-3 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium border border-blue-200 dark:border-blue-800"
+                      itemProp="knowsAbout"
                     >
                       {spec}
                     </span>
@@ -135,21 +139,21 @@ const About: React.FC = () => {
 
           {/* Right: Executive Summary, Core Competencies, and Technical Expertise */}
           <div className="flex flex-col gap-8">
-            <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-md">
+            <article className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-md">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
-                Executive Summary: Java Full Stack Developer
+                Executive Summary: Rana Ranveer Kumar Yadav - Java Full Stack Developer
               </h3>
-              <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed">
+              <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed" itemProp="description">
                 <p>
-                  Results-driven and detail-oriented <strong className="text-slate-900 dark:text-white">Java Full Stack Developer</strong> with
+                  Results-driven and detail-oriented <strong className="text-slate-900 dark:text-white">Java Full Stack Developer Rana Ranveer Kumar Yadav</strong> with
                   strong expertise in building scalable web applications using <strong className="text-blue-600">Spring Boot, MySQL, and React</strong>.
                 </p>
                 <p>
-                  Skilled in building clean REST APIs, integrating frontend/backend services, and solving real-world business problems
-                  through clean, testable code.
+                  <span itemProp="name">Rana Ranveer Kumar Yadav</span> is skilled in building clean REST APIs, integrating frontend/backend services, and solving real-world business problems
+                  through clean, testable code. Currently working as Web Development Trainee at Tiranga Aerospace in Bengaluru, Karnataka, India.
                 </p>
               </div>
-            </div>
+            </article>
 
             <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-md">
               <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Core Competencies</h4>
