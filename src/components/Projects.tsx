@@ -5,39 +5,50 @@ import './Projects.css';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Enterprise-grade e-commerce solution with advanced user authentication, comprehensive product catalog, intelligent shopping cart, and secure payment gateway integration.",
-      technologies: ["React.js", "Spring Boot", "MySQL", "REST API", "JWT"],
-      icon: <ShoppingCart className="w-6 h-6" />,
-      features: ["Multi-tier Authentication", "Advanced Product Management", "Smart Shopping Cart", "Secure Payment Gateway"],
-      category: "Full Stack Development",
-      status: "Production Ready",
-      duration: "6 months",
-      liveUrl: "https://ecommercewebsite-pi-five.vercel.app/",
-      githubUrl: "https://github.com/ranveer2312/Products-Management"
-    },
-    {
-      title: "Enterprise HR Management",
-      description: "Scalable human resource management system with comprehensive employee lifecycle management, advanced analytics, and automated workflow processing.",
-      technologies: ["Spring Boot", "JavaScript", "MySQL", "Bootstrap", "JPA"],
+      title: "Integrated Database Management System",
+      description: "Role-based HR management system with roles including Admin, Finance Manager, Data Manager, Sales Manager, HR Manager, and Employees. Implemented 6 core modules including Employee Onboarding, Attendance Tracking, Payroll, and Analytics Dashboards.",
+      technologies: ["React.js", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "REST API"],
       icon: <Users className="w-6 h-6" />,
-      features: ["Employee Lifecycle Management", "Automated Attendance Tracking", "Advanced Analytics Dashboard", "Custom Report Generation"],
+      features: ["Role-based Access Control", "Employee Onboarding", "Attendance Tracking", "Payroll Processing", "Analytics Dashboards", "Real-time Data Insights"],
       category: "Enterprise Application",
       status: "Production Ready",
-      duration: "4 months",
+      duration: "6 months",
       liveUrl: "https://idmsproject.vercel.app/",
       githubUrl: "https://github.com/ranveer2312/IDMS"
     },
     {
-      title: "IoT Emergency Response System",
-      description: "Mission-critical IoT infrastructure for real-time environmental monitoring with cloud-native architecture and automated emergency response protocols.",
-      technologies: ["IoT Sensors", "Python", "AWS IoT", "Real-time Analytics", "MQTT"],
+      title: "E-Commerce Website",
+      description: "Complete e-commerce platform with features such as product catalog, shopping cart, secure authentication, and integrated payment. Developed frontend using ReactJS for responsive and interactive user interfaces with Spring Boot REST APIs.",
+      technologies: ["React.js", "Spring Boot", "MySQL", "REST API", "JWT", "Payment Integration"],
+      icon: <ShoppingCart className="w-6 h-6" />,
+      features: ["Product Catalog", "Shopping Cart", "User Authentication", "Secure Payment Gateway", "Order Management", "Responsive Design"],
+      category: "Full Stack Development",
+      status: "Production Ready",
+      duration: "5 months",
+      liveUrl: "https://ecommercewebsite-pi-five.vercel.app/",
+      githubUrl: "https://github.com/ranveer2312/Products-Management"
+    },
+    {
+      title: "IoT-Based Emergency Alert System",
+      description: "Designed and developed an IoT-based emergency alert system to provide real-time alerts. Integrated cloud services for storing and processing alert data efficiently. Implemented sensor-based automation to detect emergencies and trigger notifications.",
+      technologies: ["IoT Sensors", "Cloud Integration", "Real-time Alerts", "Automation", "Data Processing"],
       icon: <Zap className="w-6 h-6" />,
-      features: ["Real-time Sensor Network", "Cloud-native Architecture", "Automated Alert System", "Predictive Analytics"],
+      features: ["Real-time Emergency Detection", "Cloud Data Storage", "Automated Notifications", "Sensor Integration", "Alert Processing"],
       category: "IoT & Cloud Computing",
       status: "Code Available",
-      duration: "8 months",
+      duration: "4 months",
       githubUrl: "https://github.com/ranveer2312/iot-emergency-system"
+    },
+    {
+      title: "Code Collaboration Platform",
+      description: "Real-time collaborative coding environment with live code sharing, video chat, and synchronized editing for remote development teams.",
+      technologies: ["React.js", "Node.js", "Socket.io", "WebRTC", "Monaco Editor", "Express.js"],
+      icon: <Code2 className="w-6 h-6" />,
+      features: ["Real-time Code Editing", "Video Chat Integration", "Live Code Sharing", "Multi-language Support"],
+      category: "Collaboration Platform",
+      status: "Code Available",
+      duration: "4 months",
+      githubUrl: "https://github.com/ranveer2312/code-collab"
     },
     {
       title: "Django Commerce Suite",
@@ -59,17 +70,6 @@ const Projects: React.FC = () => {
       category: "AgriTech Solution",
       status: "Client Deployed",
       duration: "5 months"
-    },
-    {
-      title: "Code Collaboration Platform",
-      description: "Real-time collaborative coding environment with live code sharing, video chat, and synchronized editing for remote development teams.",
-      technologies: ["React.js", "Node.js", "Socket.io", "WebRTC", "Monaco Editor", "Express.js"],
-      icon: <Code2 className="w-6 h-6" />,
-      features: ["Real-time Code Editing", "Video Chat Integration", "Live Code Sharing", "Multi-language Support"],
-      category: "Collaboration Platform",
-      status: "Code Available",
-      duration: "4 months",
-      githubUrl: "https://github.com/ranveer2312/code-collab"
     }
   ];
 

@@ -92,8 +92,8 @@ const About: React.FC = () => {
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <Building className="w-5 h-5 text-blue-600" />
                   <div itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
-                    <p className="font-medium" itemProp="name">Tiranga Aerospace</p>
-                    <p className="text-sm text-slate-500">Web Development Trainee</p>
+                    <p className="font-medium" itemProp="name">Ni and Sons Wiring Solutions Pvt. Ltd.</p>
+                    <p className="text-sm text-slate-500">Web Developer & Server Administrator</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
@@ -104,7 +104,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <Calendar className="w-5 h-5 text-blue-600" />
-                  <span>4+ Months Experience</span>
+                  <span>8+ Months Experience</span>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <GraduationCap className="w-5 h-5 text-blue-600" />
@@ -145,12 +145,10 @@ const About: React.FC = () => {
               </h3>
               <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed" itemProp="description">
                 <p>
-                  Results-driven and detail-oriented <strong className="text-slate-900 dark:text-white">Java Full Stack Developer Rana Ranveer Kumar Yadav</strong> with
-                  strong expertise in building scalable web applications using <strong className="text-blue-600">Spring Boot, MySQL, and React</strong>.
+                  Results-driven and detail-oriented <strong className="text-slate-900 dark:text-white">Computer Science graduate</strong> with hands-on experience in full stack web development, including <strong className="text-blue-600">Java, ReactJS, Spring Boot, JavaScript, and MySQL</strong>.
                 </p>
                 <p>
-                  <span itemProp="name">Rana Ranveer Kumar Yadav</span> is skilled in building clean REST APIs, integrating frontend/backend services, and solving real-world business problems
-                  through clean, testable code. Currently working as Web Development Trainee at Tiranga Aerospace in Bengaluru, Karnataka, India.
+                  Currently working as a <strong>Web Developer and Server Administrator</strong> at Ni and Sons Wiring Solutions Pvt. Ltd, developing scalable web applications, managing server infrastructure, and deploying websites. Experienced in frontend and backend development, database integration, and building user-centric applications. Skilled in REST API development, version control, and delivering efficient, maintainable software solutions.
                 </p>
               </div>
             </article>

@@ -8,9 +8,9 @@ const Skills: React.FC = () => {
       icon: <Code className="w-6 h-6" />,
       skills: [
         { name: "Java", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "C", level: 80 },
-        { name: "JavaScript", level: 88 }
+        { name: "JavaScript", level: 88 },
+        { name: "TypeScript", level: 85 },
+        { name: "Python", level: 80 }
       ],
       color: "from-blue-500 to-blue-600"
     },
@@ -19,9 +19,11 @@ const Skills: React.FC = () => {
       icon: <Monitor className="w-6 h-6" />,
       skills: [
         { name: "ReactJS", level: 92 },
-        { name: "HTML/CSS", level: 95 },
-        { name: "JavaScript", level: 88 },
-        { name: "Bootstrap", level: 85 }
+        { name: "HTML5", level: 95 },
+        { name: "CSS3", level: 93 },
+        { name: "Tailwind CSS", level: 88 },
+        { name: "Bootstrap", level: 85 },
+        { name: "Material UI", level: 82 }
       ],
       color: "from-green-500 to-green-600"
     },
@@ -30,9 +32,9 @@ const Skills: React.FC = () => {
       icon: <Server className="w-6 h-6" />,
       skills: [
         { name: "Spring Boot", level: 90 },
-        { name: "Django", level: 78 },
-        { name: "PHP", level: 75 },
-        { name: "REST APIs", level: 88 }
+        { name: "REST APIs", level: 88 },
+        { name: "JWT", level: 85 },
+        { name: "Bcrypt", level: 83 }
       ],
       color: "from-purple-500 to-purple-600"
     },
@@ -47,24 +49,24 @@ const Skills: React.FC = () => {
       color: "from-orange-500 to-orange-600"
     },
     {
-      title: "DevOps",
+      title: "DevOps & Tools",
       icon: <Settings className="w-6 h-6" />,
       skills: [
-        { name: "Git", level: 85 },
+        { name: "Git", level: 88 },
+        { name: "GitHub", level: 87 },
         { name: "Docker", level: 75 },
-        { name: "Kubernetes", level: 70 },
-        { name: "CI/CD", level: 72 }
+        { name: "GitHub Actions", level: 73 }
       ],
       color: "from-red-500 to-red-600"
     },
     {
-      title: "Tools",
+      title: "Development Tools",
       icon: <Smartphone className="w-6 h-6" />,
       skills: [
         { name: "VS Code", level: 95 },
         { name: "IntelliJ IDEA", level: 90 },
         { name: "Postman", level: 88 },
-        { name: "Git", level: 85 }
+        { name: "Swagger", level: 85 }
       ],
       color: "from-teal-500 to-teal-600"
     }
@@ -131,8 +133,8 @@ const Skills: React.FC = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Machine Learning", "IoT Development", "Data Science", "Microservices",
-              "System Design", "Agile Methodology", "Problem Solving", "Team Leadership"
+              "REST API Development", "Authentication & Security", "Agile Methodology", "Problem Solving",
+              "Server Administration", "Application Deployment", "System Design", "Team Collaboration"
             ].map((skill, index) => (
               <span
                 key={index}
