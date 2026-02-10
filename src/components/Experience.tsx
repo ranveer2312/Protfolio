@@ -44,9 +44,9 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/20 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900/20">
+    <section id="experience" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/20 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="text-center mb-20">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600/10 to-indigo-600/10 dark:from-blue-600/20 dark:to-indigo-600/20 px-6 py-3 rounded-full border border-blue-200/50 dark:border-blue-700/50 mb-6">
             <Briefcase className="w-5 h-5 text-blue-600 dark:text-blue-400" />
             <span className="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">Career Journey</span>
@@ -138,7 +138,7 @@ const Experience: React.FC = () => {
         </div>
 
         {/* Career Summary */}
-        <div className="mt-16 sm:mt-20">
+        <div className="mt-8 sm:mt-12 md:mt-16">
           <div className="bg-gradient-to-br from-white via-blue-50/50 to-indigo-50/30 dark:from-slate-800 dark:via-slate-700 dark:to-indigo-900/20 rounded-2xl sm:rounded-3xl p-8 sm:p-10 border border-slate-200/50 dark:border-slate-700/50 shadow-xl">
             <div className="text-center">
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full mb-6 shadow-lg">

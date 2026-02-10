@@ -79,33 +79,33 @@ const Stats: React.FC = () => {
   }, []);
 
   return (
-    <section id="stats-section" className="py-16 bg-white dark:bg-slate-900 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
+    <section id="stats-section" className="py-10 sm:py-12 md:py-16 bg-white dark:bg-slate-900 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-3 sm:mb-4 tracking-tight">
             By the Numbers
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
-          <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed px-4">
             A snapshot of my journey and achievements
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="group text-center p-8 bg-white dark:bg-slate-800 rounded-2xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-200/50 dark:border-slate-700/50 shadow-lg"
+              className="group text-center p-6 sm:p-8 bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-200/50 dark:border-slate-700/50 shadow-lg"
             >
-              <div className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r ${stat.color} rounded-xl text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r ${stat.color} rounded-lg sm:rounded-xl text-white mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 {stat.icon}
               </div>
               
-              <div className={`bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}>
+              <div className={`bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-1 sm:mb-2`}>
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
               
-              <p className="text-slate-600 dark:text-slate-400 font-medium text-sm">
+              <p className="text-slate-600 dark:text-slate-400 font-medium text-xs sm:text-sm">
                 {stat.label}
               </p>
             </div>

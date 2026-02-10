@@ -86,26 +86,26 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
+    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900/20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6 tracking-tight">
             Get In Touch
           </h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
-          <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+          <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed px-4">
             Let's discuss opportunities, collaborations, or just have a conversation about technology
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
           {/* Contact Information */}
           <div>
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-10">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6 sm:mb-10">
               Contact Information
             </h3>
             
-            <div className="space-y-8 mb-10">
+            <div className="space-y-4 sm:space-y-6 md:space-y-8 mb-6 sm:mb-10">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
@@ -114,14 +114,14 @@ const Contact: React.FC = () => {
                     info.href !== '#' ? 'hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105' : 'cursor-default'
                   }`}
                 >
-                  <div className="flex-shrink-0 p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 p-2 sm:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg sm:rounded-xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
                     {info.icon}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
+                    <p className="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
                       {info.label}
                     </p>
-                    <p className="text-slate-900 dark:text-white font-semibold text-lg">
+                    <p className="text-slate-900 dark:text-white font-semibold text-sm sm:text-base md:text-lg break-all">
                       {info.value}
                     </p>
                   </div>
@@ -131,10 +131,10 @@ const Contact: React.FC = () => {
 
             {/* Social Links */}
             <div className="mb-10">
-              <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-6">
+              <h4 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6">
                 Connect with me
               </h4>
-              <div className="flex space-x-6">
+              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 md:space-x-6">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -164,11 +164,11 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div>
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-10">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6 sm:mb-10">
               Send Message
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 md:space-y-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wide">

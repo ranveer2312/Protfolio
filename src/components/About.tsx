@@ -59,17 +59,17 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white dark:bg-slate-900" itemScope itemType="https://schema.org/Person">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Rana Ranveer Kumar Yadav</h2>
-          <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+    <section id="about" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white dark:bg-slate-900" itemScope itemType="https://schema.org/Person">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-3 sm:mb-4">About Rana Ranveer Kumar Yadav</h2>
+          <div className="w-12 sm:w-16 h-1 bg-blue-600 mx-auto rounded-full mb-4 sm:mb-6"></div>
+          <p className="text-sm sm:text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto px-4">
             <span itemProp="name">Rana Ranveer Kumar Yadav</span> - <span itemProp="jobTitle">Java Full Stack Developer</span> specializing in scalable web applications and modern development practices
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 sm:gap-8 items-stretch">
           {/* Left: Profile Card */}
           <div>
             <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 h-full flex flex-col shadow-md">

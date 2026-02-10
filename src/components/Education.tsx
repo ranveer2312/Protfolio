@@ -43,23 +43,23 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <section id="education" className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/20 to-indigo-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900/20" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
-      <div className="max-w-6xl mx-auto px-6 sm:px-8">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl shadow-lg mb-8">
-            <Trophy className="w-5 h-5" />
-            <span className="font-bold text-sm uppercase tracking-widest">Academic Excellence</span>
+    <section id="education" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-blue-50/20 to-indigo-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900/20" style={{fontFamily: 'Inter, system-ui, sans-serif'}}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12">
+          <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl shadow-lg mb-4 sm:mb-6 md:mb-8">
+            <Trophy className="w-4 h-4 sm:w-5 sm:h-5" />
+            <span className="font-bold text-xs sm:text-sm uppercase tracking-wide sm:tracking-widest">Academic Excellence</span>
           </div>
-          <h2 className="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-white dark:via-blue-200 dark:to-indigo-200 mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-white dark:via-blue-200 dark:to-indigo-200 mb-4 sm:mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>
             Educational Journey
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 mx-auto rounded-full mb-8 shadow-lg"></div>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed font-medium">
+          <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 mx-auto rounded-full mb-4 sm:mb-6 md:mb-8 shadow-lg"></div>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed font-medium px-4">
             Comprehensive academic foundation building expertise from core sciences to advanced computer engineering
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-4 sm:space-y-6 md:space-y-8">
           {educationData.map((education, index) => {
             const colors = [
               { bg: 'from-blue-500 to-indigo-600', icon: 'from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30', text: 'text-blue-600 dark:text-blue-400' },
@@ -79,10 +79,10 @@ const Education: React.FC = () => {
                 {/* Gradient top border */}
                 <div className={`h-1 bg-gradient-to-r ${color.bg}`}></div>
                 
-                <div className="p-8 lg:p-10">
-                  <div className="flex items-start space-x-6">
+                <div className="p-4 sm:p-6 md:p-8 lg:p-10">
+                  <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-6">
                     <div className="flex-shrink-0">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${color.icon} rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                      <div className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br ${color.icon} rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
                         <div className={color.text}>
                           {education.icon}
                         </div>
@@ -90,13 +90,13 @@ const Education: React.FC = () => {
                     </div>
                     
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-start justify-between mb-4">
+                      <div className="flex flex-col sm:flex-row items-start justify-between mb-4 gap-3">
                         <div>
-                          <h3 className="text-2xl lg:text-3xl font-black text-slate-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 transition-all duration-300" style={{fontFamily: 'Poppins, sans-serif'}}>
+                          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-slate-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 transition-all duration-300" style={{fontFamily: 'Poppins, sans-serif'}}>
                             {education.degree}
                           </h3>
                           {education.stream && (
-                            <p className={`text-lg font-bold ${color.text} mb-2`} style={{fontFamily: 'Inter, sans-serif'}}>
+                            <p className={`text-sm sm:text-base md:text-lg font-bold ${color.text} mb-2`} style={{fontFamily: 'Inter, sans-serif'}}>
                               {education.stream}
                             </p>
                           )}
@@ -108,11 +108,11 @@ const Education: React.FC = () => {
                         </div>
                       </div>
                       
-                      <h4 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4" style={{fontFamily: 'Inter, sans-serif'}}>
+                      <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-800 dark:text-slate-200 mb-4" style={{fontFamily: 'Inter, sans-serif'}}>
                         {education.institution}
                       </h4>
                       
-                      <div className="flex flex-wrap items-center gap-6 text-slate-600 dark:text-slate-400 mb-6">
+                      <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 text-slate-600 dark:text-slate-400 mb-4 sm:mb-6">
                         <div className="flex items-center space-x-2 bg-slate-50 dark:bg-slate-700/50 px-3 py-2 rounded-lg">
                           <MapPin className="w-4 h-4" />
                           <span className="text-sm font-medium">{education.location}</span>
@@ -123,8 +123,8 @@ const Education: React.FC = () => {
                         </div>
                       </div>
                       
-                      <div className={`bg-gradient-to-r ${color.icon} rounded-xl p-6 border border-slate-200/50 dark:border-slate-600/50`}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className={`bg-gradient-to-r ${color.icon} rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-slate-200/50 dark:border-slate-600/50`}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
                           <div>
                             <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-2">
                               🏛️ Awarding Body
@@ -151,18 +151,18 @@ const Education: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-16">
-          <div className="bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:via-slate-700 dark:to-indigo-900/20 rounded-3xl p-10 border border-slate-200/50 dark:border-slate-700/50 shadow-2xl">
+        <div className="mt-6 sm:mt-8 md:mt-12">
+          <div className="bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 dark:from-slate-800 dark:via-slate-700 dark:to-indigo-900/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200/50 dark:border-slate-700/50 shadow-2xl">
             <div className="text-center">
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full mb-6 shadow-lg">
                 <Building2 className="w-5 h-5" />
                 <span className="font-bold text-sm uppercase tracking-wider">Academic Foundation</span>
               </div>
-              <h3 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-blue-800 to-purple-900 dark:from-white dark:via-blue-200 dark:to-purple-200 mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-blue-800 to-purple-900 dark:from-white dark:via-blue-200 dark:to-purple-200 mb-4 sm:mb-6" style={{fontFamily: 'Poppins, sans-serif'}}>
                 Excellence in Education
               </h3>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-8"></div>
-              <p className="text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed font-medium" style={{fontFamily: 'Inter, sans-serif'}}>
+              <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-4 sm:mb-6 md:mb-8"></div>
+              <p className="text-sm sm:text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed font-medium px-4" style={{fontFamily: 'Inter, sans-serif'}}>
                 This comprehensive educational journey has built a strong foundation combining theoretical excellence 
                 with practical application, developing the analytical thinking and technical expertise essential for 
                 innovation in software engineering and technology leadership.

@@ -74,24 +74,24 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full mb-6">
-            <Award className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <span className="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wide">Portfolio</span>
+    <section id="projects" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="text-center mb-6 sm:mb-8 md:mb-12">
+          <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-4 sm:mb-6">
+            <Award className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-400" />
+            <span className="text-blue-600 dark:text-blue-400 font-semibold text-xs sm:text-sm uppercase tracking-wide">Portfolio</span>
           </div>
-          <h2 className="text-5xl sm:text-6xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-4 sm:mb-6 tracking-tight px-4">
             Featured <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <div className="w-32 h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 mx-auto rounded-full mb-8"></div>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
+          <div className="w-24 sm:w-32 h-1.5 sm:h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 mx-auto rounded-full mb-4 sm:mb-6 md:mb-8"></div>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed px-4">
             Explore my portfolio of enterprise-grade applications, showcasing expertise in full-stack development, 
             cloud architecture, and innovative technology solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -103,16 +103,16 @@ const Projects: React.FC = () => {
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative p-8">
+              <div className="relative p-4 sm:p-6 md:p-8">
                 {/* Project Header */}
-                <div className="mb-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center space-x-4">
-                      <div className="p-4 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-2xl text-blue-600 dark:text-blue-400 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                <div className="mb-6 sm:mb-8">
+                  <div className="flex items-start justify-between mb-3 sm:mb-4">
+                    <div className="flex flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3 md:space-x-4">
+                      <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-xl sm:rounded-2xl text-blue-600 dark:text-blue-400 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                         {project.icon}
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                           {project.title}
                         </h3>
                         <div className="flex flex-wrap gap-2">
@@ -142,17 +142,17 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-base">
+                <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mb-6 sm:mb-8 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Features */}
-                <div className="mb-8">
+                <div className="mb-6 sm:mb-8">
                   <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-4 uppercase tracking-wide flex items-center">
                     <div className="w-1 h-4 bg-gradient-to-b from-blue-600 to-indigo-600 rounded-full mr-2"></div>
                     Key Features
                   </h4>
-                  <div className="grid grid-cols-1 gap-3">
+                  <div className="grid grid-cols-1 gap-2 sm:gap-3">
                     {project.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
@@ -166,16 +166,16 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Technologies */}
-                <div className="mb-8">
+                <div className="mb-6 sm:mb-8">
                   <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-3 uppercase tracking-wide flex items-center">
                     <div className="w-1 h-4 bg-gradient-to-b from-indigo-600 to-purple-600 rounded-full mr-2"></div>
                     Tech Stack
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-2 bg-gradient-to-r from-slate-100 to-blue-50 dark:from-slate-700 dark:to-blue-900/30 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-600 hover:scale-105 hover:shadow-md transition-all duration-200 cursor-default"
+                        className="px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-slate-100 to-blue-50 dark:from-slate-700 dark:to-blue-900/30 text-slate-800 dark:text-slate-200 rounded-lg sm:rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-600 hover:scale-105 hover:shadow-md transition-all duration-200 cursor-default"
                       >
                         {tech}
                       </span>
@@ -184,19 +184,19 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex space-x-3">
+                <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
                   {project.liveUrl ? (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-5 py-3.5 rounded-xl transition-all duration-300 text-sm font-bold shadow-xl hover:shadow-2xl hover:scale-105 group/btn"
+                      className="flex-1 flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl transition-all duration-300 text-xs sm:text-sm font-bold shadow-xl hover:shadow-2xl hover:scale-105 group/btn"
                     >
                       <ExternalLink size={16} className="group-hover/btn:rotate-12 transition-transform duration-300" />
                       <span>Live Demo</span>
                     </a>
                   ) : (
-                    <div className={`flex-1 flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl text-sm font-bold cursor-default ${
+                    <div className={`flex-1 flex items-center justify-center space-x-2 px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold cursor-default ${
                       project.status === 'In Development' 
                         ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white' 
                         : project.status === 'Code Available'
@@ -217,13 +217,13 @@ const Projects: React.FC = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-blue-400 dark:hover:border-blue-500 px-5 py-3.5 rounded-xl transition-all duration-300 text-sm font-bold hover:scale-105 group/btn"
+                      className="flex items-center justify-center space-x-2 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-blue-400 dark:hover:border-blue-500 px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl transition-all duration-300 text-xs sm:text-sm font-bold hover:scale-105 group/btn"
                     >
                       <Github size={16} className="group-hover/btn:rotate-12 transition-transform duration-300" />
                       <span>Source</span>
                     </a>
                   ) : (
-                    <div className="flex items-center justify-center space-x-2 border-2 border-slate-300 dark:border-slate-600 text-slate-500 dark:text-slate-400 px-5 py-3.5 rounded-xl text-sm font-bold cursor-default hover:border-slate-400 dark:hover:border-slate-500 transition-colors duration-200">
+                    <div className="flex items-center justify-center space-x-2 border-2 border-slate-300 dark:border-slate-600 text-slate-500 dark:text-slate-400 px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold cursor-default hover:border-slate-400 dark:hover:border-slate-500 transition-colors duration-200">
                       <Lock size={16} />
                       <span>Proprietary</span>
                     </div>

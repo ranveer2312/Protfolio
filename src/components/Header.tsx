@@ -40,16 +40,16 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
         ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-xl border-b border-gray-200/20 dark:border-gray-700/20' 
         : 'bg-transparent'
     }`}>
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-16">
+      <nav className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-12">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           <div className="flex-shrink-0">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1.5 sm:space-x-2">
               <img 
                 src="/images/profile.jpg" 
                 alt="Rana Ranveer Kumar Yadav" 
-                className="w-8 h-8 rounded-lg object-cover border-2 border-blue-600"
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg object-cover border-2 border-blue-600"
               />
-              <h1 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
+              <h1 className="text-base sm:text-xl font-bold text-slate-900 dark:text-white tracking-tight">
                 Rana Ranveer
               </h1>
             </div>
@@ -89,18 +89,18 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="md:hidden flex items-center space-x-1.5 sm:space-x-2">
             <button
               onClick={toggleDarkMode}
-              className="p-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300"
+              className="p-2 sm:p-2.5 rounded-lg sm:rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300"
             >
-              {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+              {darkMode ? <Sun size={16} className="sm:w-[18px] sm:h-[18px]" /> : <Moon size={16} className="sm:w-[18px] sm:h-[18px]" />}
             </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2.5 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300"
+              className="p-2 sm:p-2.5 rounded-lg sm:rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300"
             >
-              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              {isMenuOpen ? <X size={18} className="sm:w-5 sm:h-5" /> : <Menu size={18} className="sm:w-5 sm:h-5" />}
             </button>
           </div>
         </div>
