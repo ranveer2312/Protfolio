@@ -2,13 +2,13 @@ import React from 'react';
 import { Calendar, MapPin, Building, Briefcase } from 'lucide-react';
 
 const Experience: React.FC = () => {
-  const calculateDuration = (startDate: string) => {
+  const calculateDuration = (startDate: string, endDate?: string) => {
     const start = new Date(startDate);
-    const now = new Date();
-    const months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    const end = endDate ? new Date(endDate) : new Date();
+    const months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;
-    
+
     if (years > 0 && remainingMonths > 0) {
       return `${years} year${years > 1 ? 's' : ''} ${remainingMonths} month${remainingMonths > 1 ? 's' : ''}`;
     } else if (years > 0) {
@@ -22,8 +22,8 @@ const Experience: React.FC = () => {
     {
       company: "Ni and Sons Wiring Solutions Pvt. Ltd.",
       position: "Web Developer & Server Administrator",
-      startDate: "2024-11-24",
-      duration: `November 2024 – Present (${calculateDuration("2024-11-24")})`,
+      startDate: "2025-11-24",
+      duration: `November 2025 – Present (${calculateDuration("2025-11-24")})`,
       location: "Bengaluru, Karnataka",
       description: "Handling company server management, application deployment, and uptime monitoring. Developing and maintaining the official company website. Working on backend logic, API integrations, and database operations. Troubleshooting system, application, and server-related issues. Providing technical support to ensure smooth internal system operations.",
       technologies: ["ReactJS", "Spring Boot", "MySQL", "Server Management", "REST APIs", "Git", "Application Deployment"],
@@ -32,11 +32,12 @@ const Experience: React.FC = () => {
     },
     {
       company: "Tiranga Aerospace",
-      position: "Java Full Stack Developer",
-      startDate: "2024-05-05",
-      duration: "May 2024 – November 2024",
+      position: "Intern → Trainee (Java Full Stack Developer)",
+      startDate: "2025-05-05",
+      endDate: "2025-11-21",
+      duration: `May 2025 – November 2025 (${calculateDuration("2025-05-05", "2025-11-21")})`,
       location: "Bengaluru, Karnataka",
-      description: "Developed full-stack e-commerce and HR management applications using ReactJS, Spring Boot, and MySQL. Built and integrated RESTful APIs and implemented responsive front-end designs. Used Git for version control and collaborated in an agile development environment. Practiced SDLC phases from planning to deployment.",
+      description: "Started as an Intern and was promoted to Trainee. Developed full-stack e-commerce and HR management applications using ReactJS, Spring Boot, and MySQL. Built and integrated RESTful APIs and implemented responsive front-end designs. Used Git for version control and collaborated in an agile development environment. Practiced SDLC phases from planning to deployment.",
       technologies: ["ReactJS", "Spring Boot", "MySQL", "REST APIs", "Git", "Agile", "SDLC"],
       isCurrentRole: false,
       companyType: "Aerospace Technology"

@@ -4,10 +4,19 @@ import { Code2, Users, Award, Coffee } from 'lucide-react';
 const Stats: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const getExperienceMonths = () => {
+    const start = new Date('2025-05-05');
+    const now = new Date();
+    return (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  };
+
+  const expMonths = getExperienceMonths();
+  const expYears = Math.floor(expMonths / 12);
+
   const stats = [
     {
       icon: <Code2 className="w-6 h-6" />,
-      value: 50,
+      value: 10,
       suffix: '+',
       label: 'Projects Completed',
       color: 'from-blue-600 to-indigo-600'
@@ -15,9 +24,9 @@ const Stats: React.FC = () => {
 
     {
       icon: <Award className="w-6 h-6" />,
-      value: 4,
-      suffix: '+',
-      label: 'Years Experience',
+      value: expYears > 0 ? expYears : expMonths,
+      suffix: expYears > 0 ? '+ Years' : 'm',
+      label: 'Experience',
       color: 'from-purple-600 to-pink-600'
     },
     {

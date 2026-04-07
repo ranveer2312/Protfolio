@@ -25,8 +25,8 @@ const Projects: React.FC = () => {
       category: "Full Stack Development",
       status: "Production Ready",
       duration: "5 months",
-      liveUrl: "https://ecommercewebsite-pi-five.vercel.app/",
-      githubUrl: "https://github.com/ranveer2312/Products-Management"
+      liveUrl: "https://manvaya.vercel.app/",
+      githubUrl: "https://github.com/ranveer2312/ethereal-elegance"
     },
     {
       title: "IoT-Based Emergency Alert System",
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
           </h2>
           <div className="w-24 sm:w-32 h-1.5 sm:h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 mx-auto rounded-full mb-4 sm:mb-6 md:mb-8"></div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed px-4">
-            Explore my portfolio of enterprise-grade applications, showcasing expertise in full-stack development, 
+            10+ projects built spanning enterprise applications, full-stack platforms, IoT systems, and more — showcasing expertise in full-stack development, 
             cloud architecture, and innovative technology solutions.
           </p>
         </div>

@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                 <div className="text-[10px] sm:text-xs md:text-sm text-slate-600 dark:text-slate-400 font-semibold">Experience</div>
               </div>
               <div className="text-center lg:text-left p-3 sm:p-4 bg-white/50 dark:bg-slate-800/50 rounded-lg sm:rounded-xl backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-1 sm:mb-2">5+</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-1 sm:mb-2">10+</div>
                 <div className="text-[10px] sm:text-xs md:text-sm text-slate-600 dark:text-slate-400 font-semibold">Projects</div>
               </div>
             </div>

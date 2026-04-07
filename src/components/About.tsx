@@ -11,6 +11,14 @@ import {
   GraduationCap
 } from 'lucide-react';
 
+const calculateExperienceLabel = () => {
+  const start = new Date('2025-05-05');
+  const now = new Date();
+  const months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  const years = Math.floor(months / 12);
+  return years > 0 ? `${years}+ Years Experience` : `${months}+ Months Experience`;
+};
+
 const About: React.FC = () => {
   const coreCompetencies = [
     {
@@ -104,7 +112,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <Calendar className="w-5 h-5 text-blue-600" />
-                  <span>8+ Months Experience</span>
+                  <span>{calculateExperienceLabel()}</span>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-700 dark:text-slate-300">
                   <GraduationCap className="w-5 h-5 text-blue-600" />
